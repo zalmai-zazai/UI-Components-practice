@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 5px;
+  font-family: Outfit, sans-serif;
+}
+.card {
+  display: flex;
+  height: 70vh;
+  gap: 10px;
+  flex-direction: row;
+}
+.combinedLeft {
+  display: flex;
+  gap: 5px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.left img {
+  height: 15vh;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+.left img:first-child {
+  height: 15vh;
+  border: solid rgb(83, 83, 184) 1px;
+  border-radius: 5px;
+  opacity: 1;
+}
+
+.middle {
+  display: flex;
+}
+.middle img {
+  height: 60vh;
+  border-radius: 10px;
+  box-shadow: 1px 0px 8px 2px rgb(195, 195, 230);
+}
+
+.right {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.polo {
+  font-size: 6px;
+  color: rgb(54, 54, 182);
+  font-weight: bold;
+}
+
+.right h2 {
+  font-size: 13px;
+  font-weight: bold;
+  width: 200px;
+}
+.right .blue {
+  font-size: 5px;
+  width: 200px;
+}
+
+.price {
+  display: flex;
+}
+.price h3 {
+  font-size: 14px;
+}
+.price p {
+  font-size: 5px;
+  text-decoration: line-through;
+  color: gray;
+}
+.size {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.sizes {
+  display: flex;
+  gap: 7px;
+}
+.size .choose {
+  font-size: 5px;
+  font-weight: bold;
+}
+.size p {
+  font-size: 8px;
+}
+.size p:nth-child(2) {
+  background-color: rgb(81, 81, 207);
+  color: white;
+  padding: 1px;
+  border-radius: 2px;
+}
+.right button {
+  margin-top: 40px;
+  border: none;
+  font-size: 6px;
+  padding: 4px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(81, 81, 207);
+  width: 100%;
+}
+
+@media only screen and (max-width: 470px) {
+  /* Styles for screens that are 768px wide or less (typically phones) */
+
+  .card {
+    flex-direction: column;
+  }
+  .right {
+    display: flex;
+  }
+  .right button {
+    margin-top: 10px;
+  }
+
+  .size {
+    margin-bottom: 20px;
+  }
+}
